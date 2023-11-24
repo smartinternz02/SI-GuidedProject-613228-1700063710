@@ -1,0 +1,273 @@
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table.responsive-table tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  table.responsive-table th {
+    display: block;
+    text-align: right;
+  }
+  table.responsive-table td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+  table.responsive-table tr {
+    border-bottom: none;
+    padding: 0 10px;
+  }
+  table.responsive-table thead {
+    border: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
+
+.collection {
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.collection .collection-item {
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.collection .collection-item.avatar {
+  min-height: 84px;
+  padding-left: 72px;
+  position: relative;
+}
+
+.collection .collection-item.avatar:not(.circle-clipper) > .circle,
+.collection .collection-item.avatar :not(.circle-clipper) > .circle {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.collection .collection-item.avatar i.circle {
+  font-size: 18px;
+  line-height: 42px;
+  color: #fff;
+  background-color: #999;
+  text-align: center;
+}
+
+.collection .collection-item.avatar .title {
+  font-size: 16px;
+}
+
+.collection .collection-item.avatar p {
+  margin: 0;
+}
+
+.collection .collection-item.avatar .secondary-content {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.collection .collection-item:last-child {
+  border-bottom: none;
+}
+
+.collection .collection-item.active {
+  background-color: #26a69a;
+  color: #eafaf9;
+}
+
+.collection .collection-item.active .secondary-content {
+  color: #fff;
+}
+
+.collection a.collection-item {
+  display: block;
+  -webkit-transition: .25s;
+  transition: .25s;
+  color: #26a69a;
+}
+
+.collection a.collection-item:not(.active):hover {
+  background-color: #ddd;
+}
+
+.collection.with-header .collection-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 20px;
+}
+
+.collection.with-header .collection-item {
+  padding-left: 30px;
+}
+
+.collection.with-header .collection-item.avatar {
+  padding-left: 72px;
+}
+
+.secondary-content {
+  float: right;
+  color: #26a69a;
+}
+
+.collapsible .collection {
+  margin: 0;
+  border: none;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+position: relative;
+margin: auto;
+margin-top: 25px;
+margin-bottom: 5px;
+-webkit-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+}
+
+.timepicker-canvas,
+.timepicker-dial {
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+
+.timepicker-minutes {
+visibility: hidden;
+}
+
+.timepicker-tick {
+border-radius: 50%;
+color: rgba(0, 0, 0, 0.87);
+line-height: 40px;
+text-align: center;
+width: 40px;
+height: 40px;
+position: absolute;
+cursor: pointer;
+font-size: 15px;
+}
+
+.timepicker-tick.active,
+.timepicker-tick:hover {
+background-color: rgba(38, 166, 154, 0.25);
+}
+
+.timepicker-dial {
+-webkit-transition: opacity 350ms, -webkit-transform 350ms;
+transition: opacity 350ms, -webkit-transform 350ms;
+transition: transform 350ms, opacity 350ms;
+transition: transform 350ms, opacity 350ms, -webkit-transform 350ms;
+}
+
+.timepicker-dial-out {
+opacity: 0;
+}
+
+.timepicker-dial-out.timepicker-hours {
+-webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+}
+
+.timepicker-dial-out.timepicker-minutes {
+-webkit-transform: scale(0.8, 0.8);
+        transform: scale(0.8, 0.8);
+}
+
+.timepicker-canvas {
+-webkit-transition: opacity 175ms;
+transition: opacity 175ms;
+}
+
+.timepicker-canvas line {
+stroke: #26a69a;
+stroke-width: 4;
+stroke-linecap: round;
+}
+
+.timepicker-canvas-out {
+opacity: 0.25;
+}
+
+.timepicker-canvas-bearing {
+stroke: none;
+fill: #26a69a;
+}
+
+.timepicker-canvas-bg {
+stroke: none;
+fill: #26a69a;
+}
+
+/* Footer */
+.timepicker-footer {
+margin: 0 auto;
+padding: 5px 1rem;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+
+.timepicker-clear {
+color: #F44336;
+}
+
+.timepicker-close {
+color: #26a69a;
+}
+
+.timepicker-clear,
+.timepicker-close {
+padding: 0 20px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 601px) {
+.timepicker-modal {
+  max-width: 600px;
+}
+.timepicker-container.modal-content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.timepicker-text-container {
+  top: 32%;
+}
+.timepicker-display-am-pm {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+}
